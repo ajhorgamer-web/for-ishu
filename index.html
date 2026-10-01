@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Ishu Didi 💌🐱</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff0f3;--card:#fff;--ink:#4a3340;--soft:#8a6f7c;--pink:#ff7da0;--mint:#c9f0dc;--sun:#ffe08a;--line:#ffd3df;--sky:#d9ecff;--lav:#e9ddff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a1d27;--card:#3a2a36;--ink:#ffeef3;--soft:#d4b3c1;--mint:#2f5a47;--sun:#6b5a22;--line:#573f50;--sky:#2c4258;--lav:#40336a}}
+:root[data-theme="dark"]{--bg:#2a1d27;--card:#3a2a36;--ink:#ffeef3;--soft:#d4b3c1;--mint:#2f5a47;--sun:#6b5a22;--line:#573f50;--sky:#2c4258;--lav:#40336a}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Fredoka','Nunito','Segoe UI',system-ui,sans-serif;line-height:1.5;min-height:100vh;overflow-x:hidden}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid var(--pink);outline-offset:2px}
+#cover{position:fixed;inset:0;z-index:40;background:var(--bg);display:grid;place-content:center;text-align:center;padding:24px;gap:10px}
+#cover.gone{display:none}
+#open{border:0;background:none;font-size:110px;line-height:1;animation:bob 1.8s ease-in-out infinite}
+#cover h2{margin:0;font-size:30px}#cover p{margin:0;color:var(--soft)}
+@keyframes bob{50%{transform:translateY(-10px) rotate(-4deg)}}
+main{max-width:480px;margin:0 auto;padding:26px 18px 190px;text-align:center;position:relative;z-index:1}
+.big{font-size:64px;display:inline-block;animation:bob 2.4s ease-in-out infinite}
+h1{font-size:clamp(30px,9vw,42px);line-height:1.15;margin:6px 0}
+.sub{color:var(--soft);margin:0 0 18px;font-size:18px}
+.bar{height:18px;border-radius:99px;background:var(--line);overflow:hidden;margin:0 0 6px}
+.bar i{display:block;height:100%;width:0;background:var(--pink);border-radius:99px;transition:width .4s}
+.cap{color:var(--soft);font-size:14px;margin:0 0 14px}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:12px;text-align:left}
+li button{width:100%;display:flex;align-items:center;gap:14px;background:var(--card);border:2px solid var(--line);border-radius:22px;padding:13px 16px;font-size:18px;text-align:left;transition:transform .15s,background .2s}
+li button:active{transform:scale(.97)}
+.em{font-size:26px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--sun);flex:none}
+li:nth-child(even) .em{background:var(--mint)}
+.tick{margin-left:auto;width:26px;height:26px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;color:transparent;font-size:15px;flex:none}
+li.done button{background:var(--mint)}
+li.done .tick{background:var(--pink);border-color:var(--pink);color:#fff}
+.card{margin-top:20px;background:var(--card);border:2px solid var(--line);border-radius:26px;padding:18px}
+.card h3{margin:0 0 10px;font-size:20px}
+.glasses,.moods{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.glasses button{width:52px;height:52px;border-radius:16px;border:2px solid var(--line);background:var(--sky);font-size:24px;opacity:.45;transition:.2s}
+.glasses button.on{opacity:1;transform:scale(1.06);border-color:var(--pink)}
+.moods button{width:64px;height:64px;border-radius:50%;border:2px solid var(--line);background:var(--lav);font-size:32px;transition:transform .15s}
+.moods button:active{transform:scale(.9)}
+.reasons{display:grid;gap:10px}.reasons button{width:100%;height:auto;border-radius:18px;padding:12px 14px;font-size:17px;line-height:1.35;text-align:center}
+#breath{width:110px;height:110px;border-radius:50%;background:var(--mint);margin:14px auto;display:grid;place-items:center;font-size:44px;transition:transform 4s ease-in-out}
+.dot{width:42px;height:42px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+.pill{border:0;background:var(--pink);color:#fff;border-radius:99px;padding:12px 22px;font-size:18px;font-weight:600}
+.pill:active{transform:scale(.96)}
+.reply{min-height:52px;margin:12px 0 0;font-size:19px}
+.rx{background:var(--sun);border:2px dashed var(--pink);text-align:left}
+.rx h3{text-align:center}.rx p{margin:4px 0;font-size:17px}
+.note{margin-top:20px;background:var(--card);border:2px dashed var(--pink);border-radius:26px;padding:22px 20px;font-size:19px}
+.note b{display:block;font-size:24px;margin-bottom:6px;color:var(--pink)}
+.row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.ghost,.pill.ghost{background:var(--card);color:var(--ink);border:2px solid var(--line);text-decoration:none;display:inline-block}
+#win{display:none;margin-top:14px;font-size:20px;font-weight:600;color:var(--pink)}
+.h{position:fixed;pointer-events:none;font-size:24px;animation:fly 1.4s ease-out forwards;z-index:50}
+@keyframes fly{to{transform:translateY(-150px) scale(1.4);opacity:0}}
+.p{position:fixed;top:-30px;z-index:0;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+#catwrap{position:fixed;right:max(8px,calc(50% - 250px));bottom:0;z-index:5;width:150px;pointer-events:none;padding-bottom:env(safe-area-inset-bottom,0px)}
+#cat{pointer-events:auto;border:0;background:none;padding:0;width:150px;display:block;animation:tilt 3s ease-in-out infinite;transform-origin:50% 100%}
+#cat:active{transform:scale(1.08)}
+@keyframes tilt{50%{transform:rotate(5deg)}}
+.eye{animation:blink 4s infinite;transform-origin:center;transform-box:fill-box}
+@keyframes blink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.1)}}
+#say{position:absolute;right:100px;bottom:112px;width:170px;background:var(--card);border:2px solid var(--pink);border-radius:18px;padding:8px 12px;font-size:15px;text-align:center;opacity:0;transform:scale(.8);transition:.25s;pointer-events:none}
+#say.on{opacity:1;transform:scale(1)}
+@media (prefers-reduced-motion:reduce){.big,#open,#cat,.eye{animation:none}.h{animation-duration:.01s}.p{display:none}}
+</style>
+</head>
+<body>
+<div id="cover">
+  <button id="open" aria-label="Open the card">💌</button>
+  <h2>For Ishu Didi 🐱</h2>
+  <p>Tap the envelope to open 🌸</p>
+</div>
+
+<div id="catwrap">
+  <div id="say" role="status"></div>
+  <button id="cat" aria-label="Pet the cat">
+    <svg viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="22,38 18,6 48,24" fill="#ffc78a" stroke="#d99a5c" stroke-width="3" stroke-linejoin="round"/>
+      <polygon points="98,38 102,6 72,24" fill="#ffc78a" stroke="#d99a5c" stroke-width="3" stroke-linejoin="round"/>
+      <polygon points="25,32 23,14 40,25" fill="#ff9fb5"/><polygon points="95,32 97,14 80,25" fill="#ff9fb5"/>
+      <ellipse cx="60" cy="58" rx="46" ry="38" fill="#ffc78a" stroke="#d99a5c" stroke-width="3"/>
+      <path d="M52 22q8 8 16 0M44 26q-2 7 2 11M76 26q2 7-2 11" stroke="#e0a066" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse class="eye" cx="42" cy="56" rx="6" ry="8" fill="#4a3340"/><ellipse class="eye" cx="78" cy="56" rx="6" ry="8" fill="#4a3340"/>
+      <circle cx="44" cy="53" r="2.2" fill="#fff"/><circle cx="80" cy="53" r="2.2" fill="#fff"/>
+      <circle cx="30" cy="70" r="8" fill="#ff9fb5" opacity=".6"/><circle cx="90" cy="70" r="8" fill="#ff9fb5" opacity=".6"/>
+      <path d="M55 66h10l-5 6z" fill="#ff7da0"/>
+      <path d="M60 72q-4 8-10 4M60 72q4 8 10 4" stroke="#4a3340" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M14 62l-12-4M14 68l-12 2M106 62l12-4M106 68l12 2" stroke="#4a3340" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cx="38" cy="96" rx="14" ry="8" fill="#fff" stroke="#d99a5c" stroke-width="3"/><ellipse cx="82" cy="96" rx="14" ry="8" fill="#fff" stroke="#d99a5c" stroke-width="3"/>
+    </svg>
+  </button>
+</div>
+
+<main>
+  <div class="big">🌷</div>
+  <h1>Get well soon, Ishu Didi!</h1>
+  <p class="sub">Mission: make Didi feel better 🐾</p>
+  <a class="pill" id="songtop" target="_blank" rel="noopener" href="https://youtu.be/2KHwE0P72o0?t=21&si=vWN6pZ8RFnFA3RZb" style="display:inline-block;text-decoration:none;margin:0 0 16px">🎶 Play our song for Didi</a>
+  <div class="bar"><i id="fill"></i></div>
+  <p class="cap" id="cap">Recovery loading... 0%</p>
+  <ul id="list">
+    <li><button><span class="em">🫶</span>Take care of yourself<span class="tick">✓</span></button></li>
+    <li><button><span class="em">😴</span>Sleep well (like a cat 😸)<span class="tick">✓</span></button></li>
+    <li><button><span class="em">💧</span>Drink water, stay hydrated<span class="tick">✓</span></button></li>
+    <li><button><span class="em">💊</span>Take your meds on time<span class="tick">✓</span></button></li>
+    <li><button><span class="em">🛋️</span>Rest well<span class="tick">✓</span></button></li>
+  </ul>
+  <div id="win">Recovery 100%! Ishu Didi is a champion 🏆💖</div>
+
+  <div class="card">
+    <h3>How are you feeling, Didi?</h3>
+    <div class="moods" id="moods">
+      <button aria-label="Terrible">🤒</button><button aria-label="Meh">😐</button><button aria-label="Okay">🙂</button><button aria-label="Great">😄</button>
+    </div>
+    <p class="reply" id="moodmsg">Tap one 👆</p>
+  </div>
+
+  <div class="card">
+    <h3>Water glasses today 💧</h3>
+    <div class="glasses" id="glasses"></div>
+    <p class="cap" id="gcap" style="margin:10px 0 0">0 of 8 glasses</p>
+  </div>
+
+  <div class="card rx">
+    <h3>🩺 Dr. Meow's Prescription</h3>
+    <p>💖 Lots of love, any time</p>
+    <p>😴 Nap like a cat (16 hours is allowed)</p>
+    <p>💧 8 glasses of water</p>
+    <p>🍫 Chocolate (I will bring it!)</p>
+    <p>🚫 0 stress, 0 overthinking</p>
+    <p style="font-size:13px;color:var(--soft)">Just for fun, not real medical advice. Please follow your doctor!</p>
+  </div>
+
+  <div class="card">
+    <h3>Need a smile? 😸</h3>
+    <div class="row" style="margin-top:0">
+      <button class="pill" id="hug">Sweet wish 💌</button>
+      <button class="pill" id="joke" style="background:#8a6bff">Joke 😹</button>
+    </div>
+    <p class="reply" id="hugmsg"></p>
+  </div>
+
+  <div class="card">
+    <h3>Cat pets 🐱</h3>
+    <p style="margin:0">Pets given: <b id="pets">0</b></p>
+    <p class="cap" style="margin:6px 0 0">Tap the cat at the bottom. It purrs and says funny things!</p>
+  </div>
+
+  <div class="card">
+    <h3>Calm breathing 🌿</h3>
+    <div id="breath">🐱</div>
+    <p class="cap" id="btxt" style="margin:0 0 10px">Tap start, then breathe with the cat</p>
+    <button class="pill" id="bstart">Start 🌿</button>
+  </div>
+
+  <div class="card">
+    <h3>Magic wish jar 🫙</h3>
+    <button class="pill" id="jar">Pick a wish ✨</button>
+    <p class="reply" id="jarmsg"></p>
+  </div>
+
+  <div class="card">
+    <h3>Cat nap timer 😴</h3>
+    <div class="row" style="margin-top:0">
+      <button class="pill ghost nap" data-m="5">5 min</button>
+      <button class="pill ghost nap" data-m="10">10 min</button>
+      <button class="pill ghost nap" data-m="20">20 min</button>
+    </div>
+    <p class="reply" id="napt">Pick a nap length</p>
+  </div>
+
+  <div class="card">
+    <h3>Pick your color 🎨</h3>
+    <div class="row" style="margin-top:0" id="dots"></div>
+  </div>
+
+  <div class="card">
+    <h3>Why you're the best Didi 💝</h3>
+    <div class="reasons" id="reasons"></div>
+  </div>
+
+  <div class="note"><b>You mean a lot to me 🥹</b>I'm worried about you, Didi. Please rest and get better soon. I'm always right here for you.</div>
+
+  <div class="row">
+    <button class="pill ghost" id="party">🐱 Cat party</button>
+    <button class="pill ghost" id="night">🌙 Sleepy mode</button>
+    <button class="pill ghost" id="music">🎵 Music box: on</button>
+    <a class="pill ghost" target="_blank" rel="noopener" href="https://youtu.be/2KHwE0P72o0?t=21&si=vWN6pZ8RFnFA3RZb">🎶 Play our song</a>
+  </div>
+</main>
+
+<script>
+var petals=['🌸','🌷','🐾','🌼','✨','🐱'];
+function burst(x,y){['💖','🐾','✨','🌸'].forEach(function(s,i){var h=document.createElement('span');h.className='h';h.textContent=s;h.style.left=(x-30+i*18)+'px';h.style.top=y+'px';document.body.appendChild(h);setTimeout(function(){h.remove()},1500)})}
+function petal(){var p=document.createElement('span');p.className='p';p.textContent=petals[Math.floor(Math.random()*petals.length)];p.style.left=Math.random()*100+'vw';p.style.fontSize=(14+Math.random()*14)+'px';p.style.animationDuration=(7+Math.random()*6)+'s';document.body.appendChild(p);setTimeout(function(){p.remove()},13500)}
+setInterval(petal,1100);
+var ac=null,timer=null,musicOn=true,step=0;
+var scale=[523.25,587.33,659.25,783.99,880,783.99,659.25,587.33];
+function ctx(){try{var C=window.AudioContext||window.webkitAudioContext;if(!ac)ac=new C();if(ac.state==='suspended')ac.resume()}catch(e){}return ac}
+function note(f){if(!ac)return;var o=ac.createOscillator(),g=ac.createGain();o.type='sine';o.frequency.value=f;g.gain.setValueAtTime(0,ac.currentTime);g.gain.linearRampToValueAtTime(.06,ac.currentTime+.02);g.gain.exponentialRampToValueAtTime(.0001,ac.currentTime+1.4);o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+1.5)}
+function startMusic(){if(!ctx())return;clearInterval(timer);timer=setInterval(function(){note(scale[step%scale.length]);step++},dark?1100:650)}
+function meow(){if(!ctx())return;var t=ac.currentTime,o=ac.createOscillator(),g=ac.createGain();o.type='triangle';o.frequency.setValueAtTime(600,t);o.frequency.linearRampToValueAtTime(950,t+.15);o.frequency.exponentialRampToValueAtTime(420,t+.5);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.12,t+.05);g.gain.linearRampToValueAtTime(0,t+.55);o.connect(g);g.connect(ac.destination);o.start(t);o.stop(t+.6)}
+var mb=document.getElementById('music');
+mb.onclick=function(){musicOn=!musicOn;if(musicOn){startMusic()}else{clearInterval(timer)}mb.textContent='🎵 Music box: '+(musicOn?'on':'off')};
+document.getElementById('open').onclick=function(e){document.getElementById('cover').classList.add('gone');burst(e.clientX,e.clientY);startMusic();for(var i=0;i<14;i++)setTimeout(petal,i*120);setTimeout(function(){say('Meow! Hi Ishu Didi! 🐱')},500)};
+var items=document.querySelectorAll('#list li');
+function upd(){var n=document.querySelectorAll('#list li.done').length;document.getElementById('fill').style.width=n*20+'%';document.getElementById('cap').textContent='Recovery loading... '+n*20+'%';document.getElementById('win').style.display=n===5?'block':'none'}
+items.forEach(function(li){li.querySelector('button').onclick=function(e){li.classList.toggle('done');burst(e.clientX,e.clientY);upd();if(document.querySelectorAll('#list li.done').length===5){for(var i=0;i<20;i++)setTimeout(petal,i*80);say('100%! You did it, Didi! 🎉')}}});
+var gl=document.getElementById('glasses');
+for(var i=0;i<8;i++){(function(){var b=document.createElement('button');b.textContent='🥛';b.setAttribute('aria-label','Glass of water');b.onclick=function(e){b.classList.toggle('on');b.textContent=b.classList.contains('on')?'💧':'🥛';var n=gl.querySelectorAll('.on').length;document.getElementById('gcap').textContent=n+' of 8 glasses'+(n===8?' 🎉 Hydrated queen!':'');burst(e.clientX,e.clientY)};gl.appendChild(b)})()}
+var msgs=['Get well soon, Didi. Home is brighter with your smile 🌟','You are stronger than any fever 💪','Didi, you are my favourite person 💛','I am saving your share of chocolate 🍫','I miss your laugh already 😊','Rest now, the world can wait 🌙','You are loved so much, Ishu Didi 💖'];
+var jokes=['Why did the cat sit on the laptop? To keep an eye on the mouse! 🐭','What do you call a sleepy cat? A cat-nap-per 😴','Why is the cat a good doctor? It always gives you a purr-scription! 💊','Your germs are scared of you. They said "nope, too much power" 😤','Didi, even the cat says: be well soon, I need my chair back 🪑'];
+var hi=0,ji=0;
+document.getElementById('hug').onclick=function(e){document.getElementById('hugmsg').textContent=msgs[hi++%msgs.length];burst(e.clientX,e.clientY)};
+document.getElementById('joke').onclick=function(e){document.getElementById('hugmsg').textContent=jokes[ji++%jokes.length];burst(e.clientX,e.clientY)};
+var moodReply=['Aww Didi 🥺 Rest, sip water, and let the cat guard you. Get well soon! 💛','Meh is okay. Even cats have lazy days 😸 Take it slow.','Nice! Keep going, Didi. Treat yourself to something yummy 🍰','YAYY! Dance time! 💃 (but only a little, rest first 😄)'];
+document.querySelectorAll('#moods button').forEach(function(b,i){b.onclick=function(e){document.getElementById('moodmsg').textContent=moodReply[i];burst(e.clientX,e.clientY);say(i<2?'Sending purrs 🐾':'Meow-velous! 🎉')}});
+var rs=['You always make time for me 🕰️','You make me laugh like nobody else 😂','You are my forever best friend 👭','You are brave even when you feel tired 💪','Home is nicer with you in it 🏡'];
+var rb=document.getElementById('reasons');
+rs.forEach(function(t,i){var b=document.createElement('button');b.className='pill ghost';b.textContent='Reason '+(i+1)+' 💝 (tap)';b.onclick=function(e){b.textContent=t;burst(e.clientX,e.clientY)};rb.appendChild(b)});
+var dark=false;
+document.getElementById('night').onclick=function(){dark=!dark;if(musicOn)startMusic();document.documentElement.setAttribute('data-theme',dark?'dark':'light');this.textContent=dark?'☀️ Wake up mode':'🌙 Sleepy mode';say(dark?'Shhh... sweet dreams, Didi 🌙':'Good morning, Didi! ☀️')};
+var sayT=null;
+function say(t){var s=document.getElementById('say');s.textContent=t;s.classList.add('on');clearTimeout(sayT);sayT=setTimeout(function(){s.classList.remove('on')},2600)}
+var lines=['Purrr... more pets please 😻','Meow! Did you drink water? 💧','I am a doctor. Dr. Meow. Trust me 🩺','Nap time? Yes. Always yes 😴','Get well soon or I sit on your phone 📱','You are the best Didi, meow! 💖','Treats? No? Okay, I still love you 🐟'];
+var pets=0;
+document.getElementById('cat').onclick=function(e){pets++;document.getElementById('pets').textContent=pets;meow();say(pets===5?'🎁 Secret! Ishu Didi is the best sister in the world! 💖':lines[Math.floor(Math.random()*lines.length)]);if(pets===5){for(var k=0;k<20;k++)setTimeout(petal,k*80)}burst(e.clientX,e.clientY-20)};
+
+document.getElementById('party').onclick=function(){meow();say('Cat party! 🎉🐱');for(var i=0;i<18;i++){(function(i){setTimeout(function(){var p=document.createElement('span');p.className='p';p.textContent=i%3?'🐱':'🐾';p.style.left=Math.random()*100+'vw';p.style.fontSize=(22+Math.random()*18)+'px';p.style.animationDuration=(4+Math.random()*3)+'s';document.body.appendChild(p);setTimeout(function(){p.remove()},7500)},i*100)})(i)}};
+var bt=null,bin=true;
+document.getElementById('bstart').onclick=function(){var b=document.getElementById('breath'),t=document.getElementById('btxt'),btn=this;
+if(bt){clearInterval(bt);bt=null;b.style.transform='scale(1)';t.textContent='Tap start, then breathe with the cat';btn.textContent='Start 🌿';return}
+function go(){b.style.transform=bin?'scale(1.5)':'scale(1)';t.textContent=bin?'Breathe in slowly... 🌬️':'Breathe out... 😌';bin=!bin}
+bin=true;go();bt=setInterval(go,4000);btn.textContent='Stop'};
+
+var wj=['Wish: you feel a little better every hour 🌈','Dr. Meow predicts a yummy meal very soon 🍲','Wish: a full night of cozy sleep 🌙','Dr. Meow predicts a big smile today 😊','Wish: all your tiredness flies away 🕊️','Dr. Meow predicts good news is coming 📬','Wish: you laugh so much you forget you were unwell 😂'];
+document.getElementById('jar').onclick=function(e){document.getElementById('jarmsg').textContent=wj[Math.floor(Math.random()*wj.length)];burst(e.clientX,e.clientY)};
+var nt=null;
+document.querySelectorAll('.nap').forEach(function(b){b.onclick=function(){clearInterval(nt);var s=parseInt(b.dataset.m,10)*60,o=document.getElementById('napt');function t(){var m=Math.floor(s/60),r=s%60;o.textContent='😴 '+m+':'+(r<10?'0':'')+r+' left. Sweet dreams, Didi'}t();nt=setInterval(function(){s--;if(s<=0){clearInterval(nt);o.textContent='⏰ Nap done! Drink some water 💧';meow();say('Wake up, sleepy Didi! ☀️')}else t()},1000)}});
+['#ff7da0','#9b7bff','#2fb98c','#ff9a3c'].forEach(function(c){var b=document.createElement('button');b.className='dot';b.style.background=c;b.setAttribute('aria-label','Pick color');b.onclick=function(e){document.documentElement.style.setProperty('--pink',c);burst(e.clientX,e.clientY)};document.getElementById('dots').appendChild(b)});
+var KEY='ishu-didi-v4';
+function save(){try{localStorage.setItem(KEY,JSON.stringify({d:Array.prototype.map.call(items,function(l){return l.classList.contains('done')?1:0}),w:Array.prototype.map.call(gl.children,function(b){return b.classList.contains('on')?1:0}),p:pets}))}catch(e){}}
+document.addEventListener('click',function(){setTimeout(save,0)});
+try{var sv=JSON.parse(localStorage.getItem(KEY)||'null');if(sv){items.forEach(function(l,i){if(sv.d&&sv.d[i])l.classList.add('done')});Array.prototype.forEach.call(gl.children,function(b,i){if(sv.w&&sv.w[i]){b.classList.add('on');b.textContent='💧'}});pets=sv.p||0;document.getElementById('pets').textContent=pets;upd();document.getElementById('gcap').textContent=gl.querySelectorAll('.on').length+' of 8 glasses'}}catch(e){}
+</script>
+</body>
+</html>
